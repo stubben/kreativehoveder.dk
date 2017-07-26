@@ -1,0 +1,78 @@
+// @import "compass/reset";
+@import "../sass/reset";
+@import "../sass/config";
+@import "../sass/utils";
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+body {
+  background-color: #fff;
+  font-family: $body-font-family;
+  font-size: 18px;
+  line-height: normal;
+}
+
+h1, h2, h3, h4 {
+  font-family: $headline-font-family;
+}
+
+h1 {
+  font-size: 44px;
+  font-size: 6vw;
+  line-height: 150%;
+}
+
+h2 {
+  font-size: 36px;
+  font-size: 4vw;
+  line-height: 100%;
+}
+
+p {
+  font-size: 26px;
+  font-size: 3vw;
+  padding: 20px 0 30px;
+}
+
+.table {
+  display: table;
+}
+
+.infobox {
+  display: table-cell;
+}
+
+.contactbox {
+  a:link, 
+  a:visited, 
+  a:hover, 
+  a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 8vw;
+  }
+
+  p {
+    font-size: 5vw;
+  }
+  .infobox {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}

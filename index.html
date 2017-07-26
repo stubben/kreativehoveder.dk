@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KreativeHoveder / Martin Stub</title>
+    <meta name="description" content="Webudvikler med mere end 15 års erfarring fra backend til frontend.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="hd sbgc-1 txtc">
+      <div class="content vh-1"></div>
+    </header>
+    <main>
+      <section class="txtc">
+        <div class="pvl">
+          <h1>KreativeHoveder</h1>
+          <figure>
+            <img src="img/martin-stub-kreativehoveder.svg" alt="Kreativt billede af Martin Stub" width="200" height="200">
+          </figure>
+          <h2 class="pvl">v/Martin Stub</h2>
+        </div>
+      </section>
+      <section>
+        <div class="table fc-1 txtc">
+          <div class="infobox s1of2 bgc-1">
+            <div class="pam">
+              <h1>Firma</h1>
+              <p>
+                KreativeHoveder v/Martin Stub
+                <br />
+                Æblerosestien 3
+                <br />
+                3460 Birkerød
+                <br />
+                martin.stub@kreativehoveder.dk
+                <br />
+                CVR: 27535127
+              </p>
+            </div>
+          </div>
+          <div class="infobox s1of2 bgc-2 fc-1">
+            <div class="pam">
+              <h1>Kompetencer</h1>
+              <p>
+                WordPress, Drupal 7
+                <br />
+                <br />
+                SASS/CSS/OOCSS, HTML, JavaScript, PHP, Bash, Python, Git/Github, IBM Notes, Apache Velocity
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="contactbox pal txtc bgc-3 fc-1">
+          <h1>Kontakt</h1>
+          <p>
+            <a href="mailto:martin.stub@kreativehoveder.dk" title="Skriv e-mail">E-mail</a> / 
+            <a href="https://www.linkedin.com/in/martinstub/" title="Gå til LinkedIn">LinkedIn</a> / 
+            <a href="https://twitter.com/mstubben" title="Gå til Twitter">Twitter</a> / 
+            <a href="https://github.com/stubben" title="Gå til Github">Github</a>
+          </p>
+          </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script>
+    let getRan = function () {
+      let x = Math.floor(Math.random() * 360);
+      return x;
+    };
+    window.setInterval(function(){
+      let hdElement = document.querySelector('.hd');
+      hdElement.style.backgroundColor = '#' + Math.floor(Math.random()*16777216).toString(16);
+      hdElement.style.backgroundSize = getRan() + 'px, ' + getRan() + 'px, ' + getRan() + 'px, ' + getRan() + 'px';
+    }, 10000);
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-103196661-1', 'auto');
+    ga('send', 'pageview');
+  </script>  
+</html>

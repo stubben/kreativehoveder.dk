@@ -1,0 +1,113 @@
+
+/* Spacing */
+/* Spacing helpers
+p,m = padding,margin 
+a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+t,s,m,l,n = tiny(5px),small(10px),medium(20px),large(30px),extra(60px),none(0px)
+*/
+.ptn, .pvn, .pan { padding-top: 0; }
+.ptt, .pvt, .pat { padding-top: 5px; }
+.pts, .pvs, .pas { padding-top: 10px; }
+.ptm, .pvm, .pam { padding-top: 20px; }
+.ptl, .pvl, .pal { padding-top: 30px; }
+.pte, .pve, .pae { padding-top: 60px; }
+.prn, .phn, .pan { padding-right: 0; }
+.prt, .pht, .pat { padding-right: 5px; }
+.prs, .phs, .pas { padding-right: 10px; }
+.prm, .phm, .pam { padding-right: 20px; }
+.prl, .phl, .pal { padding-right: 30px; }
+.pre, .phe, .pae { padding-right: 60px; }
+.pbn, .pvn, .pan { padding-bottom: 0; }
+.pbt, .pvt, .pat { padding-bottom: 5px; }
+.pbs, .pvs, .pas { padding-bottom: 10px; }
+.pbm, .pvm, .pam { padding-bottom: 20px; }
+.pbl, .pvl, .pal { padding-bottom: 30px; }
+.pbe, .pve, .pae { padding-bottom: 60px; }
+.pln, .phn, .pan { padding-left: 0; }
+.plt, .pht, .pat { padding-left: 5px; }
+.pls, .phs, .pas { padding-left: 10px; }
+.plm, .phm, .pam { padding-left: 20px; }
+.pll, .phl, .pal { padding-left: 30px; }
+.ple, .phe, .pae { padding-left: 60px; }
+
+/*
+.mttn, .mvtn, .matn { margin-top: -5px; }
+.mtsn, .mvsn, .masn { margin-top: -10px; }
+.mtln, .mvln, .maln { margin-top: -30px; }
+.mtn, .mvn, .man { margin-top: 0; }
+.mtt, .mvt, .mat { margin-top: 5px; }
+.mts, .mvs, .mas { margin-top: 10px; }
+.mtm, .mvm, .mam { margin-top: 20px; }
+.mtl, .mvl, .mal { margin-top: 30px; }
+.mte, .mve, .mae { margin-top: 60px; }
+.mrtn, .mhtn, .matn { margin-right: -5px; }
+.mrsn, .mhsn, .masn { margin-right: -10px; }
+.mrln, .mhln, .maln { margin-right: -30px; }
+.mrn, .mhn, .man { margin-right: 0; }
+.mrt, .mht, .mat { margin-right: 5px; }
+.mrs, .mhs, .mas { margin-right: 10px; }
+.mrsh, .mhsh, .mash { margin-right: 15px; }
+.mrm, .mhm, .mam { margin-right: 20px; }
+.mrl, .mhl, .mal { margin-right: 30px; }
+.mre, .mhe, .mae { margin-right: 60px; }
+.mbtn, .mvtn, .matn { margin-bottom: -5px; }
+.mbsn, .mvsn, .masn { margin-bottom: -10px; }
+.mbln, .mvln, .maln { margin-bottom: -30px; }
+.mbn, .mvn, .man { margin-bottom: 0; }
+.mbt, .mvt, .mat { margin-bottom: 5px; }
+.mbs, .mvs, .mas { margin-bottom: 10px; }
+.mbm, .mvm, .mam { margin-bottom: 20px; }
+.mbl, .mvl, .mal { margin-bottom: 30px; }
+.mbe, .mve, .mae { margin-bottom: 60px; }
+.mltn, .mhtn, .matn { margin-left: -5px; }
+.mlsn, .mhsn, .masn { margin-left: -10px; }
+.mlln, .mhln, .maln { margin-left: -30px; }
+.mln, .mhn, .man { margin-left: 0; }
+.mlt, .mht, .mat { margin-left: 5px; }
+.mls, .mhs, .mas { margin-left: 10px; }
+.mlm, .mhm, .mam { margin-left: 20px; }
+.mll, .mhl, .mal { margin-left: 30px; }
+.mle, .mhe, .mae { margin-left: 60px; }
+*/
+
+/* Text align */
+.txtl { text-align: left }
+.txtc { text-align: center }
+.txtr { text-align: right }
+.txtdn, .md_txtdn:hover { text-decoration: none }
+.txtlc { text-transform:lowercase; }
+
+.vh-1 { height: 1vh }
+.vh-5 { height: 5vh }
+.vh-10 { height: 10vh }
+.vh-20 { height: 20vh }
+.vh-30 { height: 30vh }
+.vh-40 { height: 40vh }
+.vh-50 { height: 50vh }
+
+.cell { float: left;}
+.cell-r { float: right;}
+
+.s1of2 { width: 50%;}
+
+.fst-1 {
+  filter: invert(1);
+  mix-blend-mode: difference;  
+}
+
+.fc-1 { color: #fff; }
+
+/* Section Background Patterns */
+.sbgc-1 {
+  background-color: #ff08a1;
+  background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+  linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+  background-size: 359px, 198px, 310px, 81px;
+  transition: all 5s ;
+}
+
+.bgc-1 { background-color: #ff08a1}
+.bgc-2 { background-color: #1a1c1c}
+.bgc-3 { background-color: #684529}
