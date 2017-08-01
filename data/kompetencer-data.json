@@ -1,6 +1,6 @@
 {
     "kompetencer": {
-        "platforms": "3WordPress, Drupal 7",
+        "platforms": "WordPress, Drupal 7",
         "languages": "SASS/CSS/OOCSS, HTML, JavaScript, PHP, Bash, Python, Git/Github, Vagrant, IBM Notes, Apache Velocity"
     }
 }
