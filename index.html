@@ -76,14 +76,15 @@
       hdElement.style.backgroundColor = '#' + Math.floor(Math.random()*16777216).toString(16);
       hdElement.style.backgroundSize = getRan() + 'px, ' + getRan() + 'px, ' + getRan() + 'px, ' + getRan() + 'px';
     }, 10000);
-
+    
+    var data;
     var request = new XMLHttpRequest();
     request.open('GET', 'data/kompetencer-data.json', true);
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
-        let data = JSON.parse(request.responseText);
+        data = JSON.parse(request.responseText);
       } else { // default data if error occurs.
-        let data = {"kompetencer": {"platforms": "WordPress, Drupal 7","languages": "SASS/CSS/OOCSS, HTML, JavaScript, PHP, Bash, Python, Git/Github, Vagrant, IBM Notes, Apache Velocity"}};
+        data = {"kompetencer": {"platforms": "WordPress, Drupal 7","languages": "SASS/CSS/OOCSS, HTML, JavaScript, PHP, Bash, Python, Git/Github, Vagrant, IBM Notes, Apache Velocity"}};
       }
       document.querySelector('#platforms').innerText = data.kompetencer.platforms;
       document.querySelector('#languages').innerText = data.kompetencer.languages;
