@@ -11,4 +11,5 @@ if (!empty($data)) {
     $fh = fopen("data/kompetencer-data.json", 'w');
     fwrite($fh, $data);
     fclose($fh);
+    header("Location: ./");
 }
