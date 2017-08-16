@@ -14,7 +14,7 @@
     </header>
     <main>
       <section class="txtc bg-img-1">
-        <div class="pvl">
+        <div class="pvl fade-in-down">
           <h1>KreativeHoveder</h1>
           <figure>
             <img id="profile-img" src="img/martin-stub-kreativehoveder.svg" alt="Kreativt billede af Martin Stub" width="200" height="200">
@@ -47,7 +47,10 @@
                 <span id="platforms">WordPress, Drupal 7</span>
                 <br />
                 <br />
-                <span id="languages">SASS/CSS/OOCSS, HTML, JavaScript, PHP, Bash, Python, Git/Github, IBM Notes, Apache Velocity</span>
+                <span id="specialties">Web- and applications development, Frontend development (FED), Frontend optimization (FEO)</span>
+                <br />
+                <br />
+                <span id="languages">SASS/CSS/OOCSS, HTML, JavaScript/jQuery, PHP, Bash, Python, Git/Github, Vagrant, IBM Notes, PHPTemplate, Apache Velocity</span>
               </p>
             </div>
           </div>
@@ -87,6 +90,7 @@
         data = {"kompetencer": {"platforms": "WordPress, Drupal 7","languages": "SASS/CSS/OOCSS, HTML, JavaScript, PHP, Bash, Python, Git/Github, Vagrant, IBM Notes, Apache Velocity"}};
       }
       document.querySelector('#platforms').innerText = data.kompetencer.platforms;
+      document.querySelector('#specialties').innerText = data.kompetencer.specialties;
       document.querySelector('#languages').innerText = data.kompetencer.languages;
     };
     request.send();
